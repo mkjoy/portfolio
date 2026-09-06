@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mamunul Karim — AI in Construction</title>
+<meta name="description" content="Mamunul Karim is a PhD student in civil engineering at Arizona State University working on construction worker safety, cost estimation, and applied machine learning.">
+
+<meta property="og:title" content="Mamunul Karim — AI in Construction">
+<meta property="og:description" content="PhD student at Arizona State University. Construction worker safety, cost estimation, and applied machine learning.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238C1D40'/><text x='16' y='22' font-family='Helvetica,Arial' font-size='15' font-weight='700' fill='%23FFC627' text-anchor='middle'>MK</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="topbar"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="nav-name" href="index.html">Mamunul Karim</a>
+    <ul class="nav-links">
+      <li class="nav-hide-sm"><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li class="nav-hide-sm"><a href="#publications">Publications</a></li>
+      <li><a href="visualization.html">Visualization</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1>Mamunul Karim</h1>
+    <p class="lede">
+      PhD student in civil engineering at Arizona State University. I work on
+      <strong>construction worker safety and cost estimation</strong>, building
+      data-driven frameworks that project teams can actually follow — informed by two
+      years as a project engineer in the field.
+    </p>
+    <div class="btns">
+      <a class="btn btn-solid" href="#work">See the work</a>
+      <a class="btn btn-line" href="cv.pdf">Download CV</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="titleblock">
+      <div class="tb"><span class="k">Based in</span><span class="v">Tempe, Arizona</span></div>
+      <div class="tb"><span class="k">Program</span><span class="v">PhD Civil Engineering, ASU</span></div>
+      <div class="tb"><span class="k">Focus</span><span class="v">Worker safety · Cost estimation · Scheduling</span></div>
+      <div class="tb"><span class="k">Status</span><span class="v">Fulton Fellow · Open to collaboration</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="prose">
+        <p>I am a PhD student in civil engineering at Arizona State University and a Graduate Research Associate in the School of Sustainable Engineering and the Built Environment. My doctoral research is on construction worker safety: underground pipeline incidents, heat stress, mental health, and the workforce development questions that sit underneath all three.</p>
+
+        <p>I came to research through the field rather than around it. Before graduate school I worked as a project engineer in Bangladesh on geotechnical testing and ground improvement, where I helped introduce prefabricated vertical drain manufacturing to the country for the first time and coordinated material approvals with BWDB, RHD, LGED, and PWD. That experience is why I care less about what a model can predict in a paper and more about whether a crew or an estimator can act on it.</p>
+
+        <p>It is also what drew me to the estimating problem during my master's at the University of Wyoming. On the projects I had seen, the gap between what a job was estimated to cost and what it was awarded for was treated as ordinary. I gathered bid tabulation data covering more than 1,500 highway projects across Wyoming, Colorado, Utah, and Montana and found average deviations of 19% to 48% depending on the state, concentrated in a small set of bid items rather than spread evenly. Out of that came a multi-tier machine learning framework that DOTs and contractors can follow at the item level rather than a single black-box model.</p>
+      </div>
+      <figure class="portrait">
+        <img src="headshot.jpg" alt="Portrait of Mamunul Karim">
+        <figcaption>Tempe, Arizona</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Selected work</h2>
+      <p>Research, coursework, and experiments applying data science and machine learning to real construction problems. Updated through the semester as CON 598 work is added.</p>
+    </div>
+
+    <div class="sheets">
+
+      <article class="sheet">
+        <div class="sheet-top">
+          <h3>What sends underground pipeline crews to the hospital</h3>
+          <span class="when">2026 – ongoing</span>
+        </div>
+        <dl class="spec">
+          <dt>Problem</dt>
+          <dd>Underground utility work carries some of the highest injury and fatality rates in construction, but incident data sits scattered across reporting systems and is rarely examined for pattern rather than compliance.</dd>
+          <dt>Approach</dt>
+          <dd>Compiled and analyzed underground pipeline construction accident records from 2000 to 2026, examining trends by year and cause, and comparing incident patterns before and after COVID-19. Running in parallel: a survey instrument on construction worker mental health, and a study design for heat stress monitoring using site data.</dd>
+          <dt>Tools</dt>
+          <dd>Python and R for data cleaning and statistical analysis, survey design, systematic literature review. No predictive model yet — establishing the patterns comes first, and that is a deliberate order.</dd>
+          <dt>Status</dt>
+          <dd>Ongoing doctoral research at ASU. Findings in preparation.</dd>
+        </dl>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet-top">
+          <h3>A machine learning framework for item-level cost estimation</h3>
+          <span class="when">2024 – 2026</span>
+        </div>
+        <dl class="spec">
+          <dt>Problem</dt>
+          <dd>State DOTs routinely see large gaps between the engineer's estimate and the awarded bid. WYDOT had observed deviations up to 25%, but nobody had established whether the gap was random noise or concentrated in identifiable items — and uniform estimating models treat every bid item as if it behaved the same way.</dd>
+          <dt>Approach</dt>
+          <dd>Acquired historical bid tabulation data (2017–2024) from four state DOT research offices, covering more than 1,500 projects. Screened outliers with modified Z-scores, tested group differences with ANOVA, sorted projects into high, moderate, and slight deviation clusters using K-means, then ran Pareto analysis to isolate the cost-significant items driving the deviation. Built a frequency-aware, multi-tier machine learning framework so that frequently bid items and rare ones are modeled differently.</dd>
+          <dt>Tools</dt>
+          <dd>Python with scikit-learn for clustering and gradient boosting, R, IBM SPSS.</dd>
+          <dt>Outcome</dt>
+          <dd>Average deviations of 21.41% (WYDOT), 19.10% (MDT), 48.20% (CDOT) and 24.00% (UDOT). The multi-tier framework outperformed uniform models at the item level and is designed as a procedure estimating teams can follow, not a black box. Funded by a competitive UTC research grant through CTIPS with USDOT and WYDOT as partners; published in the <i>International Journal of Construction Management</i>.</dd>
+        </dl>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet-top">
+          <h3>Tracking material deliveries from site video</h3>
+          <span class="when">2021 – 2022</span>
+        </div>
+        <dl class="spec">
+          <dt>Problem</dt>
+          <dd>Material deliveries are logged by hand at the gate, so site inventory drifts away from the paperwork and discrepancies only surface at reconciliation.</dd>
+          <dt>Approach</dt>
+          <dd>Built an automated system that detects and tracks material-carrying vehicles entering a site, updates inventory in real time, and estimates delivered quantities from the detections.</dd>
+          <dt>Tools</dt>
+          <dd>YOLOv5 object detection, a deep learning pipeline in Python, custom annotated site footage.</dd>
+          <dt>Outcome</dt>
+          <dd>83% accuracy on vehicle detection and 88% on quantity calculation. Accuracy fell in poor light and with partially occluded loads, which is the honest limit on deploying this at a real gate. Runner-up in the Builtech Fest case study competition at KUET.</dd>
+        </dl>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet-top">
+          <h3>A framework for how construction teams and AI divide the work</h3>
+          <span class="when">2026</span>
+        </div>
+        <dl class="spec">
+          <dt>Problem</dt>
+          <dd>Construction management literature discusses AI adoption at length but offers little structure for deciding which decisions stay with people, which move to models, and which need both.</dd>
+          <dt>Approach</dt>
+          <dd>Conducted a comprehensive review of human–AI collaboration in construction management and synthesized the findings into a paradigm framework mapping task types to collaboration modes.</dd>
+          <dt>Tools</dt>
+          <dd>AI-assisted literature screening and synthesis, with manual verification of every included source.</dd>
+          <dt>Outcome</dt>
+          <dd>Accepted to the International Conference on Industrialized Construction (IConIC 2026). The framework is conceptual and still needs testing against live project decisions.</dd>
+        </dl>
+      </article>
+
+      <article class="sheet">
+        <div class="sheet-top">
+          <h3>This website</h3>
+          <span class="when">Sep 2026</span>
+        </div>
+        <dl class="spec">
+          <dt>Problem</dt>
+          <dd>My research lives in PDFs and conference proceedings. I needed one place that shows the work to recruiters, collaborators, and DOT partners, and I had never built a website.</dd>
+          <dt>Approach</dt>
+          <dd>Wrote the content first, then used an AI assistant to generate a static site, edited the markup by hand, version-controlled it on GitHub, and deployed on Vercel with automatic redeploys on every commit.</dd>
+          <dt>Tools</dt>
+          <dd>Claude for generation and revision, VS Code for editing, GitHub for version control, Vercel for hosting, TinyPNG for image compression, Chrome Lighthouse for performance and accessibility auditing.</dd>
+          <dt>Outcome</dt>
+          <dd>Built for CON 598, AI in Construction, at ASU. The build report covers hours spent, what broke, and where the AI output needed correcting.</dd>
+        </dl>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="publications">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Publications</h2>
+      <p>Peer-reviewed work across construction management, materials, and applied machine learning. Full record on <a href="https://scholar.google.com/citations?user=-OOu81kAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Mamunul-Karim">ResearchGate</a>.</p>
+    </div>
+
+    <div class="pub">
+      <h3>Frequency-aware multi-tier machine learning framework for item-level highway construction cost estimation: an improvement on uniform models</h3>
+      <div class="meta">Karim, M., Abdelaty, A., &amp; Yamany, M. S. · <span class="status">Published</span>, International Journal of Construction Management</div>
+    </div>
+
+    <div class="pub">
+      <h3>A comprehensive review and paradigm framework on human–AI collaboration in construction management</h3>
+      <div class="meta">Karim, M., Ahmed, E., &amp; Anzum, A. · <span class="status">Accepted</span>, International Conference on Industrialized Construction (IConIC 2026)</div>
+    </div>
+
+    <div class="pub">
+      <h3>Forecasting energy and decarbonization: a BIM simulation and sensor explainable AI framework with interactive analytics</h3>
+      <div class="meta">Ahamed, I., Datta, S. D., Hossain, M. S., Shahriar, A. M., &amp; Karim, M. · <span class="status">Under review</span>, Energy &amp; Buildings</div>
+    </div>
+
+    <div class="pub">
+      <h3>Experimental and machine learning analysis of self-compacting concrete made with metalized waste plastic fiber and clay brick powder</h3>
+      <div class="meta">Datta, S. D., Sahriea, F., Ashraf, J., Karim, M., et al. · Journal of Engineering, 2026 · <a href="https://doi.org/10.1155/je/2822510">doi.org/10.1155/je/2822510</a></div>
+    </div>
+
+    <div class="pub">
+      <h3>Literature review on the evolution of analysis and design of pre-stressed box girder bridges</h3>
+      <div class="meta">Karim, M., Mamun, M. A. A., Ira, R. T., et al. · International Journal on Science and Technology, Vol. 16, Issue 3</div>
+    </div>
+
+    <div class="pub">
+      <h3>A simplified stress–crack width model for strain hardening cementitious material</h3>
+      <div class="meta">Mahamud, A., Mamun, M. A., &amp; Karim, M. · Journal of Construction and Building Materials Engineering, Vol. 11, Issue 1, 2025</div>
+    </div>
+
+    <div class="pub">
+      <h3>Effectiveness of shear walls according to their position in structural systems</h3>
+      <div class="meta">Mahamud, A., Mamun, M. A., &amp; Karim, M. · Journal of Fareast International University, Vol. 7, Issue 1, 2024</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div>
+          <h3>Graduate Research Associate</h3>
+          <div class="org">School of Sustainable Engineering and the Built Environment, Arizona State University</div>
+        </div>
+        <span class="when">2026 – Present</span>
+      </div>
+      <ul>
+        <li>Research on construction worker safety spanning underground pipeline incidents, heat stress, mental health, and workforce development.</li>
+        <li>Analyzed underground pipeline construction accident data from 2000–2026 and compared incident trends before and after COVID-19.</li>
+        <li>Designed a survey instrument assessing the current state of construction workers' mental health.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div>
+          <h3>Graduate Research Assistant</h3>
+          <div class="org">Civil &amp; Architectural Engineering and Construction Management, University of Wyoming</div>
+        </div>
+        <span class="when">2024 – 2026</span>
+      </div>
+      <ul>
+        <li>Led a data-driven investigation into cost estimation accuracy across more than 1,500 highway infrastructure projects for CTIPS-015, partnered with USDOT and WYDOT.</li>
+        <li>Acquired and processed bid tabulation datasets from four state DOTs, computing average deviations of 21.41%, 19.10%, 48.20% and 24.00% for WYDOT, MDT, CDOT and UDOT.</li>
+        <li>Applied K-means clustering, modified Z-score screening, ANOVA, and Pareto analysis to isolate the bid items driving systemic over- and under-estimation.</li>
+        <li>Contributed to a successfully funded grant proposal on knowledge management in construction projects.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div>
+          <h3>Project Engineer</h3>
+          <div class="org">Bang Jin Group, Bangladesh</div>
+        </div>
+        <span class="when">Feb – Jul 2024</span>
+      </div>
+      <ul>
+        <li>Introduced and initiated manufacturing of Prefabricated Vertical Drains in Bangladesh for the first time, enabling more effective ground improvement.</li>
+        <li>Provided technical oversight on materials and geotechnical testing for soil compaction and settlement projects.</li>
+        <li>Coordinated material approvals and project rollout with BWDB, RHD, LGED, and PWD officials.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div>
+          <h3>Assistant Project Engineer</h3>
+          <div class="org">Aysha Construction and Suppliers, Bangladesh</div>
+        </div>
+        <span class="when">Sep 2023 – Jan 2024</span>
+      </div>
+      <ul>
+        <li>Performed load-bearing calculations, member sizing, and structural detailing for mid-rise residential structures.</li>
+        <li>Reviewed structural plans and technical documentation for accuracy and regulatory compliance.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div>
+          <h3>Teaching Assistant</h3>
+          <div class="org">Building Engineering and Construction Management, KUET</div>
+        </div>
+        <span class="when">Mar – Aug 2023</span>
+      </div>
+      <ul>
+        <li>Assisted courses in construction estimating, building materials, construction techniques and equipment, and BIM.</li>
+        <li>Ran hands-on instruction in AutoCAD, Revit, Navisworks Manage, and Primavera P6, demonstrating collaborative modeling and scheduling workflows.</li>
+      </ul>
+    </div>
+
+    <div class="edu">
+      <h3 class="edu-title">Education</h3>
+
+      <div class="deg">
+        <div>
+          <p class="d-name">PhD, Civil Engineering</p>
+          <div class="d-org">Arizona State University · Expected May 2029</div>
+        </div>
+        <span class="when">2026 – Present</span>
+      </div>
+
+      <div class="deg">
+        <div>
+          <p class="d-name">MS, Civil Engineering — Construction Engineering and Management</p>
+          <div class="d-org">University of Wyoming · CGPA 3.67 / 4.00</div>
+        </div>
+        <span class="when">2024 – 2026</span>
+      </div>
+
+      <div class="deg">
+        <div>
+          <p class="d-name">BSc, Building Engineering and Construction Management</p>
+          <div class="d-org">Khulna University of Engineering &amp; Technology · CGPA 3.37 / 4.00</div>
+        </div>
+        <span class="when">2017 – 2022</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Get in touch</h2>
+      <p>Open to research collaboration, industry partnerships on safety and estimating data, and conversations about where AI actually earns its place in construction.</p>
+    </div>
+    <a class="mail" href="mailto:mkarim29@asu.edu">mkarim29@asu.edu</a>
+    <p class="alt-mail">Also reachable at <a href="mailto:joymamunulkarim@gmail.com">joymamunulkarim@gmail.com</a></p>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/mamunul-karim-civil/">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=-OOu81kAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://www.researchgate.net/profile/Mamunul-Karim">ResearchGate</a></li>
+      <li><a href="cv.pdf">CV (PDF)</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot">
+  <span>© 2026 Mamunul Karim</span>
+  <span>Last updated September 2026 · <a href="#top">Back to top</a></span>
+</footer>
+
+</body>
+</html>

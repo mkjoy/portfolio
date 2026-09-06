@@ -46,12 +46,19 @@ img{max-width:100%;height:auto;display:block;}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:3.5rem;}
 .nav-name{font-family:Archivo;font-weight:600;font-size:.95rem;letter-spacing:-.01em;text-decoration:none;color:var(--ink);}
 .nav-name:hover{color:var(--maroon);}
-.nav-links{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;}
+.nav-links{display:flex;gap:1.05rem;list-style:none;margin:0;padding:0;}
 .nav-links a{font-family:Archivo;font-weight:500;font-size:.9rem;text-decoration:none;color:var(--slate);}
 .nav-links a:hover{color:var(--ink);}
 .nav-links a.here{color:var(--ink);border-bottom:2px solid var(--gold);padding-bottom:2px;}
 @media (max-width:760px){
-  .nav-links{gap:1rem;}
+  .nav-in{gap:.75rem;}
+  .nav-links{
+    gap:.95rem;flex:1;justify-content:flex-end;
+    overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;
+  }
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-links li{flex:0 0 auto;}
+  .nav-links a{font-size:.85rem;}
   .nav-hide-sm{display:none;}
 }
 
@@ -80,6 +87,8 @@ img{max-width:100%;height:auto;display:block;}
 .tb:last-child{border-right:0;}
 .tb .k{font-family:Archivo;font-weight:500;font-size:.74rem;color:var(--slate);display:block;margin-bottom:.2rem;}
 .tb .v{font-family:Archivo;font-weight:600;font-size:.94rem;line-height:1.35;display:block;}
+.tb .v a{color:var(--maroon);text-decoration:none;border-bottom:1px solid var(--rule);}
+.tb .v a:hover{border-color:var(--maroon);}
 @media (max-width:780px){
   .titleblock{grid-template-columns:1fr 1fr;}
   .tb{border-bottom:1px solid var(--rule);}
@@ -128,7 +137,9 @@ img{max-width:100%;height:auto;display:block;}
 .pub:first-child{border-top:0;padding-top:0;}
 .pub h3{margin:0 0 .3rem;font-size:1rem;font-weight:600;line-height:1.45;}
 .pub .meta{font-family:Archivo;font-size:.85rem;color:var(--slate);line-height:1.55;}
-.pub .meta .status{color:var(--maroon);font-weight:600;}
+.pub .venue{font-family:Archivo;font-size:.85rem;color:var(--slate);line-height:1.55;margin-top:.15rem;}
+.pub .venue .status{color:var(--maroon);font-weight:600;}
+.pub .venue a{color:var(--maroon);}
 
 /* ---------- EXPERIENCE & EDUCATION ---------- */
 .job{padding:1.5rem 0;border-top:1px solid var(--rule);}
@@ -154,7 +165,14 @@ img{max-width:100%;height:auto;display:block;}
 .shot img{width:100%;aspect-ratio:16/10;object-fit:cover;}
 .shot figcaption{font-family:Archivo;font-size:.85rem;color:var(--slate);padding:.7rem .3rem .2rem;line-height:1.5;}
 .shot figcaption b{color:var(--ink);font-weight:600;display:block;font-size:.92rem;margin-bottom:.1rem;}
-@media (max-width:760px){.gallery{grid-template-columns:1fr;}}
+.gallery.trio{grid-template-columns:repeat(3,minmax(0,1fr));}
+.gallery.trio .shot img{aspect-ratio:4/3;}
+@media (max-width:900px){.gallery.trio{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:760px){.gallery{grid-template-columns:1fr;}.gallery.trio{grid-template-columns:1fr;}}
+
+.more{margin:1.35rem 0 0;font-family:Archivo;font-size:.9rem;font-weight:500;}
+.more a{color:var(--maroon);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px;}
+.more a:hover{color:var(--ink);border-color:var(--gold);}
 
 .video-wrap{border:1px solid var(--rule);padding:.5rem;margin:0 0 1rem;}
 .video-wrap video{width:100%;display:block;background:#000;}

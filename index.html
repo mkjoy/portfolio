@@ -27,11 +27,13 @@
   <div class="wrap nav-in">
     <a class="nav-name" href="index.html">Mamunul Karim</a>
     <ul class="nav-links">
-      <li class="nav-hide-sm"><a href="#about">About</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
-      <li class="nav-hide-sm"><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="publications.html">Publications</a></li>
       <li><a href="visualization.html">Visualization</a></li>
       <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="interests.html">Interests</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -58,7 +60,7 @@
       <div class="tb"><span class="k">Based in</span><span class="v">Tempe, Arizona</span></div>
       <div class="tb"><span class="k">Program</span><span class="v">PhD Civil Engineering, ASU</span></div>
       <div class="tb"><span class="k">Focus</span><span class="v">Worker safety · Cost estimation · Scheduling</span></div>
-      <div class="tb"><span class="k">Status</span><span class="v">Fulton Fellow · Open to collaboration</span></div>
+      <div class="tb"><span class="k">Status</span><span class="v">GRA at <a href="https://labs.engineering.asu.edu/save/">SAVE Lab</a> · Actively seeking summer internship</span></div>
     </div>
   </div>
 </header>
@@ -70,15 +72,16 @@
     </div>
     <div class="about-grid">
       <div class="prose">
-        <p>I am a PhD student in civil engineering at Arizona State University and a Graduate Research Associate in the School of Sustainable Engineering and the Built Environment. My doctoral research is on construction worker safety: underground pipeline incidents, heat stress, mental health, and the workforce development questions that sit underneath all three.</p>
+        <p>I am a PhD student in civil engineering at Arizona State University and a Graduate Research Associate in the <a href="https://labs.engineering.asu.edu/save/">SAVE Lab</a>, where I work on construction worker safety: underground pipeline incidents, heat stress, mental health, and workforce development.</p>
 
-        <p>I came to research through the field rather than around it. Before graduate school I worked as a project engineer in Bangladesh on geotechnical testing and ground improvement, where I helped introduce prefabricated vertical drain manufacturing to the country for the first time and coordinated material approvals with BWDB, RHD, LGED, and PWD. That experience is why I care less about what a model can predict in a paper and more about whether a crew or an estimator can act on it.</p>
+        <p>Before graduate school I was a project engineer on a 108 km highway corridor in Bangladesh, and that is still the work I measure everything else against. My days were <strong>cost estimation, scheduling, and field inspection</strong>. On a $6M roadway expansion I built and tracked the CPM schedule in Primavera P6 and MS Project, produced cost estimates and quantity take-offs in Bluebeam, and ran budget tracking, life-cycle cost analysis, and earned value analysis, holding 92% schedule adherence. In the field I carried out construction inspection and QA/QC across the corridor; density testing, aggregate gradation, asphalt mix design verification, and concrete cylinder testing against AASHTO and RHD specifications; and I pioneered prefabricated vertical drain ground improvement in Bangladeshi highway construction, inspecting more than 15,000 installations and cutting the consolidation period by 40%. I created the RFIs, reviewed contractor submittals, kept the daily reports, documented pay items, and marked up the as-builts.</p>
 
-        <p>It is also what drew me to the estimating problem during my master's at the University of Wyoming. On the projects I had seen, the gap between what a job was estimated to cost and what it was awarded for was treated as ordinary. I gathered bid tabulation data covering more than 1,500 highway projects across Wyoming, Colorado, Utah, and Montana and found average deviations of 19% to 48% depending on the state, concentrated in a small set of bid items rather than spread evenly. Out of that came a multi-tier machine learning framework that DOTs and contractors can follow at the item level rather than a single black-box model.</p>
+        <p>Earlier, as a site engineer and BIM modeler, I handled more than 50 RFIs along with the submittals, change orders, and closeout paperwork behind them, supervised pile casting and material quality control, tracked material quantities, and built the models and drawings the field actually worked from. I am looking for a summer internship in field engineering, project engineering, estimating, or scheduling with a general contractor or a DOT.</p>
+
+        <p>The research came out of that experience. On the projects I saw, the gap between what a job was estimated to cost and what it was awarded for was treated as ordinary, so at Wyoming I measured it across more than 1,500 highway projects in four states and built a multi-tier machine learning framework estimating teams can follow at the item level. My interest in both halves is the same: whether a crew or an estimator can actually act on what the analysis says.</p>
       </div>
       <figure class="portrait">
         <img src="headshot.jpg" alt="Portrait of Mamunul Karim">
-        <figcaption>Tempe, Arizona</figcaption>
       </figure>
     </div>
   </div>
@@ -88,7 +91,7 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>Selected work</h2>
-      <p>Research, coursework, and experiments applying data science and machine learning to real construction problems. Updated through the semester as CON 598 work is added.</p>
+      <p>Research and applied projects across construction safety, cost estimation, and field data.</p>
     </div>
 
     <div class="sheets">
@@ -101,10 +104,8 @@
         <dl class="spec">
           <dt>Problem</dt>
           <dd>Underground utility work carries some of the highest injury and fatality rates in construction, but incident data sits scattered across reporting systems and is rarely examined for pattern rather than compliance.</dd>
-          <dt>Approach</dt>
-          <dd>Compiled and analyzed underground pipeline construction accident records from 2000 to 2026, examining trends by year and cause, and comparing incident patterns before and after COVID-19. Running in parallel: a survey instrument on construction worker mental health, and a study design for heat stress monitoring using site data.</dd>
           <dt>Tools</dt>
-          <dd>Python and R for data cleaning and statistical analysis, survey design, systematic literature review. No predictive model yet — establishing the patterns comes first, and that is a deliberate order.</dd>
+          <dd>Python and R for data handling and analysis, survey design, systematic literature review.</dd>
           <dt>Status</dt>
           <dd>Ongoing doctoral research at ASU. Findings in preparation.</dd>
         </dl>
@@ -118,12 +119,10 @@
         <dl class="spec">
           <dt>Problem</dt>
           <dd>State DOTs routinely see large gaps between the engineer's estimate and the awarded bid. WYDOT had observed deviations up to 25%, but nobody had established whether the gap was random noise or concentrated in identifiable items — and uniform estimating models treat every bid item as if it behaved the same way.</dd>
-          <dt>Approach</dt>
-          <dd>Acquired historical bid tabulation data (2017–2024) from four state DOT research offices, covering more than 1,500 projects. Screened outliers with modified Z-scores, tested group differences with ANOVA, sorted projects into high, moderate, and slight deviation clusters using K-means, then ran Pareto analysis to isolate the cost-significant items driving the deviation. Built a frequency-aware, multi-tier machine learning framework so that frequently bid items and rare ones are modeled differently.</dd>
           <dt>Tools</dt>
-          <dd>Python with scikit-learn for clustering and gradient boosting, R, IBM SPSS.</dd>
+          <dd>Python (scikit-learn), R, IBM SPSS.</dd>
           <dt>Outcome</dt>
-          <dd>Average deviations of 21.41% (WYDOT), 19.10% (MDT), 48.20% (CDOT) and 24.00% (UDOT). The multi-tier framework outperformed uniform models at the item level and is designed as a procedure estimating teams can follow, not a black box. Funded by a competitive UTC research grant through CTIPS with USDOT and WYDOT as partners; published in the <i>International Journal of Construction Management</i>.</dd>
+          <dd>Average deviations of 21.41% (WYDOT), 19.10% (MDT), 48.20% (CDOT) and 24.00% (UDOT), concentrated in a small set of items rather than spread evenly. Funded by a competitive UTC research grant through CTIPS with USDOT and WYDOT as partners; published in the <i>International Journal of Construction Management</i>.</dd>
         </dl>
       </article>
 
@@ -135,10 +134,8 @@
         <dl class="spec">
           <dt>Problem</dt>
           <dd>Material deliveries are logged by hand at the gate, so site inventory drifts away from the paperwork and discrepancies only surface at reconciliation.</dd>
-          <dt>Approach</dt>
-          <dd>Built an automated system that detects and tracks material-carrying vehicles entering a site, updates inventory in real time, and estimates delivered quantities from the detections.</dd>
           <dt>Tools</dt>
-          <dd>YOLOv5 object detection, a deep learning pipeline in Python, custom annotated site footage.</dd>
+          <dd>YOLOv5 object detection, deep learning pipeline in Python.</dd>
           <dt>Outcome</dt>
           <dd>83% accuracy on vehicle detection and 88% on quantity calculation. Accuracy fell in poor light and with partially occluded loads, which is the honest limit on deploying this at a real gate. Runner-up in the Builtech Fest case study competition at KUET.</dd>
         </dl>
@@ -152,76 +149,13 @@
         <dl class="spec">
           <dt>Problem</dt>
           <dd>Construction management literature discusses AI adoption at length but offers little structure for deciding which decisions stay with people, which move to models, and which need both.</dd>
-          <dt>Approach</dt>
-          <dd>Conducted a comprehensive review of human–AI collaboration in construction management and synthesized the findings into a paradigm framework mapping task types to collaboration modes.</dd>
           <dt>Tools</dt>
-          <dd>AI-assisted literature screening and synthesis, with manual verification of every included source.</dd>
+          <dd>AI-assisted literature screening, with manual verification of every included source.</dd>
           <dt>Outcome</dt>
           <dd>Accepted to the International Conference on Industrialized Construction (IConIC 2026). The framework is conceptual and still needs testing against live project decisions.</dd>
         </dl>
       </article>
 
-      <article class="sheet">
-        <div class="sheet-top">
-          <h3>This website</h3>
-          <span class="when">Sep 2026</span>
-        </div>
-        <dl class="spec">
-          <dt>Problem</dt>
-          <dd>My research lives in PDFs and conference proceedings. I needed one place that shows the work to recruiters, collaborators, and DOT partners, and I had never built a website.</dd>
-          <dt>Approach</dt>
-          <dd>Wrote the content first, then used an AI assistant to generate a static site, edited the markup by hand, version-controlled it on GitHub, and deployed on Vercel with automatic redeploys on every commit.</dd>
-          <dt>Tools</dt>
-          <dd>Claude for generation and revision, VS Code for editing, GitHub for version control, Vercel for hosting, TinyPNG for image compression, Chrome Lighthouse for performance and accessibility auditing.</dd>
-          <dt>Outcome</dt>
-          <dd>Built for CON 598, AI in Construction, at ASU. The build report covers hours spent, what broke, and where the AI output needed correcting.</dd>
-        </dl>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="publications">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Publications</h2>
-      <p>Peer-reviewed work across construction management, materials, and applied machine learning. Full record on <a href="https://scholar.google.com/citations?user=-OOu81kAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Mamunul-Karim">ResearchGate</a>.</p>
-    </div>
-
-    <div class="pub">
-      <h3>Frequency-aware multi-tier machine learning framework for item-level highway construction cost estimation: an improvement on uniform models</h3>
-      <div class="meta">Karim, M., Abdelaty, A., &amp; Yamany, M. S. · <span class="status">Published</span>, International Journal of Construction Management</div>
-    </div>
-
-    <div class="pub">
-      <h3>A comprehensive review and paradigm framework on human–AI collaboration in construction management</h3>
-      <div class="meta">Karim, M., Ahmed, E., &amp; Anzum, A. · <span class="status">Accepted</span>, International Conference on Industrialized Construction (IConIC 2026)</div>
-    </div>
-
-    <div class="pub">
-      <h3>Forecasting energy and decarbonization: a BIM simulation and sensor explainable AI framework with interactive analytics</h3>
-      <div class="meta">Ahamed, I., Datta, S. D., Hossain, M. S., Shahriar, A. M., &amp; Karim, M. · <span class="status">Under review</span>, Energy &amp; Buildings</div>
-    </div>
-
-    <div class="pub">
-      <h3>Experimental and machine learning analysis of self-compacting concrete made with metalized waste plastic fiber and clay brick powder</h3>
-      <div class="meta">Datta, S. D., Sahriea, F., Ashraf, J., Karim, M., et al. · Journal of Engineering, 2026 · <a href="https://doi.org/10.1155/je/2822510">doi.org/10.1155/je/2822510</a></div>
-    </div>
-
-    <div class="pub">
-      <h3>Literature review on the evolution of analysis and design of pre-stressed box girder bridges</h3>
-      <div class="meta">Karim, M., Mamun, M. A. A., Ira, R. T., et al. · International Journal on Science and Technology, Vol. 16, Issue 3</div>
-    </div>
-
-    <div class="pub">
-      <h3>A simplified stress–crack width model for strain hardening cementitious material</h3>
-      <div class="meta">Mahamud, A., Mamun, M. A., &amp; Karim, M. · Journal of Construction and Building Materials Engineering, Vol. 11, Issue 1, 2025</div>
-    </div>
-
-    <div class="pub">
-      <h3>Effectiveness of shear walls according to their position in structural systems</h3>
-      <div class="meta">Mahamud, A., Mamun, M. A., &amp; Karim, M. · Journal of Fareast International University, Vol. 7, Issue 1, 2024</div>
     </div>
   </div>
 </section>
@@ -236,7 +170,7 @@
       <div class="job-top">
         <div>
           <h3>Graduate Research Associate</h3>
-          <div class="org">School of Sustainable Engineering and the Built Environment, Arizona State University</div>
+          <div class="org"><a href="https://labs.engineering.asu.edu/save/">SAVE Lab</a>, School of Sustainable Engineering and the Built Environment, Arizona State University</div>
         </div>
         <span class="when">2026 – Present</span>
       </div>
@@ -272,23 +206,28 @@
         <span class="when">Feb – Jul 2024</span>
       </div>
       <ul>
-        <li>Introduced and initiated manufacturing of Prefabricated Vertical Drains in Bangladesh for the first time, enabling more effective ground improvement.</li>
-        <li>Provided technical oversight on materials and geotechnical testing for soil compaction and settlement projects.</li>
-        <li>Coordinated material approvals and project rollout with BWDB, RHD, LGED, and PWD officials.</li>
+        <li>Pioneered prefabricated vertical drain ground improvement in Bangladeshi highway construction, covering geotechnical investigation, materials testing, QC inspection, and field monitoring of 15,000+ drain installations, cutting the consolidation period by 40%.</li>
+        <li>Managed scheduling, cost estimation, budget tracking, life-cycle cost analysis, and earned value analysis on a $6M roadway expansion using Primavera P6 and MS Project, achieving 92% schedule adherence.</li>
+        <li>Ran materials testing programs including field density (nuclear gauge and sand cone), aggregate gradation, asphalt mix design verification, and concrete cylinder testing against AASHTO and RHD specifications.</li>
+        <li>Produced RFIs, contractor submittals, daily construction reports, quantity take-offs, pay item documentation, and as-built markups, and gave on-site technical direction to crews.</li>
+        <li>Delivered field engineering, construction inspection, and safety oversight across a 108 km highway corridor, coordinating QA and regulatory compliance with BWDB, RHD, LGED, and PWD.</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="job-top">
         <div>
-          <h3>Assistant Project Engineer</h3>
-          <div class="org">Aysha Construction and Suppliers, Bangladesh</div>
+          <h3>Site Engineer &amp; BIM Modeler (Intern)</h3>
+          <div class="org">United Purpose &amp; Amigos Construction, Bangladesh</div>
         </div>
-        <span class="when">Sep 2023 – Jan 2024</span>
+        <span class="when">Jan 2022 – Jan 2024</span>
       </div>
       <ul>
-        <li>Performed load-bearing calculations, member sizing, and structural detailing for mid-rise residential structures.</li>
-        <li>Reviewed structural plans and technical documentation for accuracy and regulatory compliance.</li>
+        <li>Managed construction documentation including 50+ RFIs, contractor submittals, working drawings, and change orders.</li>
+        <li>Supported closeout: punch list completion, warranty documentation, and final inspection coordination.</li>
+        <li>Built 3D BIM models in Revit, produced site grading plans and earthwork calculations in AutoCAD Civil 3D, and ran drainage design in HydroCAD.</li>
+        <li>Performed structural design calculations for beams, columns, and slabs in ETABS per ACI, ASCE, and BNBC, and produced photorealistic renderings in Lumion for stakeholder presentations.</li>
+        <li>Supervised pile casting and material quality control on site, and resolved field issues with contractors and project teams.</li>
       </ul>
     </div>
 

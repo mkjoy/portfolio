@@ -42,7 +42,8 @@
 <main id="main">
 
 <header class="hero" id="top">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <h1>Mamunul Karim</h1>
     <p class="lede">
       PhD student in civil engineering at Arizona State University. I work on
@@ -54,6 +55,10 @@
       <a class="btn btn-solid" href="#work">See the work</a>
       <a class="btn btn-line" href="cv.pdf">Download CV</a>
     </div>
+    </div>
+    <figure class="portrait">
+      <img src="headshot.jpg" alt="Portrait of Mamunul Karim">
+    </figure>
   </div>
   <div class="wrap">
     <div class="titleblock">
@@ -72,17 +77,22 @@
     </div>
     <div class="about-grid">
       <div class="prose">
-        <p>I am a PhD student in civil engineering at Arizona State University and a Graduate Research Associate in the <a href="https://labs.engineering.asu.edu/save/">SAVE Lab</a>, where I work on construction worker safety: underground pipeline incidents, heat stress, mental health, and workforce development.</p>
+        <p>I am a project engineer by background and now a PhD student in civil engineering at Arizona State University, working in the <a href="https://labs.engineering.asu.edu/save/">SAVE Lab</a> on construction worker safety. My field experience spans highway construction, geotechnical work, and BIM coordination across Bangladesh and the United States.</p>
 
-        <p>Before graduate school I was a project engineer on a 108 km highway corridor in Bangladesh, and that is still the work I measure everything else against. My days were <strong>cost estimation, scheduling, and field inspection</strong>. On a $6M roadway expansion I built and tracked the CPM schedule in Primavera P6 and MS Project, produced cost estimates and quantity take-offs in Bluebeam, and ran budget tracking, life-cycle cost analysis, and earned value analysis, holding 92% schedule adherence. In the field I carried out construction inspection and QA/QC across the corridor; density testing, aggregate gradation, asphalt mix design verification, and concrete cylinder testing against AASHTO and RHD specifications; and I pioneered prefabricated vertical drain ground improvement in Bangladeshi highway construction, inspecting more than 15,000 installations and cutting the consolidation period by 40%. I created the RFIs, reviewed contractor submittals, kept the daily reports, documented pay items, and marked up the as-builts.</p>
-
-        <p>Earlier, as a site engineer and BIM modeler, I handled more than 50 RFIs along with the submittals, change orders, and closeout paperwork behind them, supervised pile casting and material quality control, tracked material quantities, and built the models and drawings the field actually worked from. I am looking for a summer internship in field engineering, project engineering, estimating, or scheduling with a general contractor or a DOT.</p>
-
-        <p>The research came out of that experience. On the projects I saw, the gap between what a job was estimated to cost and what it was awarded for was treated as ordinary, so at Wyoming I measured it across more than 1,500 highway projects in four states and built a multi-tier machine learning framework estimating teams can follow at the item level. My interest in both halves is the same: whether a crew or an estimator can actually act on what the analysis says.</p>
+        <p>I am especially interested in how data and AI can make construction work clearer, safer, and more predictable for the people who actually use it — from cost estimates and schedules to safety monitoring on site. I am looking for a summer internship in field engineering, project engineering, estimating, or scheduling.</p>
       </div>
-      <figure class="portrait">
-        <img src="headshot.jpg" alt="Portrait of Mamunul Karim">
-      </figure>
+
+      <aside class="known">
+        <h3>What I'm known for</h3>
+        <ul>
+          <li>Field inspection and QA/QC against AASHTO and state DOT specifications</li>
+          <li>CPM scheduling and progress tracking in Primavera P6 and MS Project</li>
+          <li>Cost estimation, quantity take-offs, and earned value analysis</li>
+          <li>RFIs, submittals, and construction documentation that holds up</li>
+          <li>Geotechnical testing and ground improvement, including PVD installation</li>
+          <li>Turning bid and safety data into decisions using Python and R</li>
+        </ul>
+      </aside>
     </div>
   </div>
 </section>
@@ -278,17 +288,47 @@
 <section class="sec" id="contact">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Get in touch</h2>
-      <p>Open to research collaboration, industry partnerships on safety and estimating data, and conversations about where AI actually earns its place in construction.</p>
+      <h2>Let's connect</h2>
     </div>
-    <a class="mail" href="mailto:mkarim29@asu.edu">mkarim29@asu.edu</a>
-    <p class="alt-mail">Also reachable at <a href="mailto:joymamunulkarim@gmail.com">joymamunulkarim@gmail.com</a></p>
-    <ul class="links">
-      <li><a href="https://www.linkedin.com/in/mamunul-karim-civil/">LinkedIn</a></li>
-      <li><a href="https://scholar.google.com/citations?user=-OOu81kAAAAJ&amp;hl=en">Google Scholar</a></li>
-      <li><a href="https://www.researchgate.net/profile/Mamunul-Karim">ResearchGate</a></li>
-      <li><a href="cv.pdf">CV (PDF)</a></li>
-    </ul>
+
+    <div class="contact-grid">
+      <div>
+        <div class="prose">
+          <p>Happy to talk about anything related to AI in construction, field engineering, research collaboration, or internship and full-time opportunities. I am always open to new connections.</p>
+        </div>
+        <a class="mail" href="mailto:mkarim29@asu.edu">mkarim29@asu.edu</a>
+        <p class="alt-mail">Also reachable at <a href="mailto:joymamunulkarim@gmail.com">joymamunulkarim@gmail.com</a></p>
+        <ul class="links">
+          <li><a href="https://www.linkedin.com/in/mamunul-karim-civil/">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=-OOu81kAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://www.researchgate.net/profile/Mamunul-Karim">ResearchGate</a></li>
+          <li><a href="cv.pdf">CV (PDF)</a></li>
+        </ul>
+      </div>
+
+      <!-- ============================================================
+           CONTACT FORM — submissions go to Formspree, then to email.
+           Endpoint is live; nothing here needs editing.
+           ============================================================ -->
+      <div class="cform-card">
+        <h3>Send a message</h3>
+        <form class="cform" action="https://formspree.io/f/myeylpdb" method="POST">
+          <input type="hidden" name="_subject" value="New message from mamunul-karim.vercel.app">
+
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required>
+
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required>
+
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send</button>
+          <p class="note">Your message goes straight to my inbox. I usually reply within a couple of days.</p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
